@@ -133,21 +133,32 @@ export default function HealthcareDashboard() {
 
           {/* Tabs para organizar os gráficos */}
           <Tabs defaultValue="efficiency" className="space-y-6">
-            <TabsList className="grid w-full grid-cols-4 bg-white border-blue-200">
+            <TabsList
+              className="flex flex-wrap w-full gap-2 bg-white border-blue-200 h-full"
+            >
               <TabsTrigger
-                value="efficiency"
-                className="data-[state=active]:bg-blue-600 data-[state=active]:text-white"
+              value="efficiency"
+              className="data-[state=active]:bg-blue-600 data-[state=active]:text-white flex-1 min-w-[180px] max-w-fit"
               >
-                Eficiência Assistencial
+              Eficiência Assistencial
               </TabsTrigger>
-              <TabsTrigger value="costs" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">
-                Gestão de Custos
+              <TabsTrigger
+              value="costs"
+              className="data-[state=active]:bg-blue-600 data-[state=active]:text-white flex-1 min-w-[180px] max-w-fit"
+              >
+              Gestão de Custos
               </TabsTrigger>
-              <TabsTrigger value="risks" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">
-                Gestão de Riscos
+              <TabsTrigger
+              value="risks"
+              className="data-[state=active]:bg-blue-600 data-[state=active]:text-white flex-1 min-w-[180px] max-w-fit"
+              >
+              Gestão de Riscos
               </TabsTrigger>
-              <TabsTrigger value="audit" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white">
-                Auditoria & Compliance
+              <TabsTrigger
+              value="audit"
+              className="data-[state=active]:bg-blue-600 data-[state=active]:text-white flex-1 min-w-[180px] max-w-fit"
+              >
+              Auditoria & Compliance
               </TabsTrigger>
             </TabsList>
 
